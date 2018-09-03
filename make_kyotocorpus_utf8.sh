@@ -14,8 +14,7 @@ cd ./KyotoCorpus4.0
 
 # 毎日新聞CD-ROMに入っているmai1995.txtを、mai95.txtにリネームしてKyotoCorpus4.0/にコピー
 # /mnt/cdromは各自の環境に合わせてCD-ROMのマウントポジションを指定する
-\cp ~/lib/mainichi/mai95.txt ./mai95.txt
-# \cp /mnt/cdrom/mai1995.txt ./mai95.txt
+\cp /mnt/cdrom/mai1995.txt ./mai95.txt
 
 # KyotoCopus4.0/以下のファイルをUTF-8に変換
 nkf -Lu -w --overwrite $(find . -type f | grep -v doc)
