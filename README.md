@@ -9,12 +9,10 @@
 京都大学テキストコーパスVersion4.0本来の形に変換するには、本スクリプトの他に毎日新聞1995年版CD-ROMが必要です。
 
 ## インストール
-1. `./make_kyotocorpus_utf8.sh`の17行目の`/mnt/cdrom`を、毎日新聞CD-ROMのマウントポイントに指定する.
-
-2. 以下のコマンドを実行.
+`./make_kyotocorpus_utf8.sh`の第一引数に毎日新聞CD-ROMのマウントポイントに指定し、以下のコマンドを実行.
 
 ```
-./make_kyotocorpus_utf8.sh
+./make_kyotocorpus_utf8.sh <path_to_mai1995.txt>
 cd ./KyotoCorpus4.0
 ./auto_conv -d ./
 ```
